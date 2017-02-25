@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<script type="text/javascript" src="../js/game.js"></script>
+
+		<script src="../bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+		<link rel="import" href="../bower_components/paper-card/paper-card.html">
+		<link rel="stylesheet" href="../css/style.css">
+
+		<title>BrainTag</title>
+
+	</head>
+	<body>
+
+		<table id="mypage" height="100%" width="100%" cellspacing="0" cellpadding="0">
+
+			<tr id="toolbar" height="10%" width="100%">
+				<td width="10%">
+					<a href="index.html"><img style="margin: 10px" src="../images/home.png" width="60px" height="60px"/></a>
+				</td>
+
+				<td width="85%">
+					<table>
+			    	<tr><td> <p2 id="category_p">Category : Sports</p2> </td></tr>
+					<tr><td> <p2 id="sentence_p">Sentence : 1/5</p2> 	</td></tr>
+		    		</table>
+				</td>
+				<td width="5%">
+		    		<img src="../images/next_icon.png" onclick="nextSentence()" width="40px" height="40px"/>
+				</td>
+			</tr>
+
+			<tr><td colspan="3"> <div class="container" id="words"></div> </td></tr>
+			<tr><td colspan="3"> <div class="container" id="answers"></div> </td></tr>
+		</table>
+	</body>
+</html>

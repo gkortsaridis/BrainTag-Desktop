@@ -1,0 +1,90 @@
+<html>
+	<head>
+			<script type="text/javascript" src="../js/index.js"></script>
+    	<link rel="import" href="../bower_components/paper-card/paper-card.html">
+		<link rel="stylesheet" href="../css/style.css">
+		<title>BrainTag</title>
+	</head>
+	<body>
+
+		<table id="mypage" height="100%" width="100%" cellspacing="0" cellpadding="0">
+
+			<tr id="toolbar" height="10%" width="100%">
+				<td width="85%">
+					<div style="margin-left: 20px"><h1 style="font-size:2vw; color: white;display:table-cell; vertical-align:middle;">BrainTag</h1></div>
+				</td>
+
+				<td width="5%">
+		    		<div style="margin-right: 20px"><img id="toolbar_item" src="../images/tag.png" onclick="showTags()" width="40px" height="40px"/></div>
+				</td>
+
+				<td width="5%">
+		    		<div style="margin-right: 20px"><img src="../images/info.png" onclick="showInfo()" width="40px" height="40px"/></div>
+				</td>
+
+				<td width="5%">
+		    		<div style="margin-right: 20px"><img src="../images/logout.png" onclick="logout()" width="40px" height="40px"/></div>
+				</td>
+			</tr>
+
+			<tr height="35%" width="100%">
+        <td colspan="4">
+				  <img src="../images/tagme_logo_transp_letters_no_shadow.png" style="display: block; margin: auto;" height="25%">
+			  </td>
+      </tr>
+
+			<tr height="35%" width="100%">
+        <td colspan="4">
+				  <paper-card elevation=2 style="height: 80%; width: 40%; margin: auto; display: block; padding: 0px;">
+            <table width="100%" height="100%">
+              <tr>
+                <td width="50%">
+                  <img src="../images/trophy.png" style="margin: auto; display: block; width: 50%"/>
+                </td>
+
+                <td width="50%">
+                 	<h1 id="user_data" style="font-size:2vw; display: block; margin: auto; vertical-align:middle; width : 100%; text-align: center">Your Score</br>75</br>Your Ranking</br>3rd</h1>
+                </td>
+              </tr>
+            </table>
+          </paper-card>
+			  </td>
+      </tr>
+
+      <tr height="10%">
+				<td colspan="4" width="100%">
+
+					<table width="100%" height="100%;" style="border-collapse: collapse;">
+						<tr>
+							<td id="btn" width="50%" style="border-right: 2px solid white;" onclick="startRandomGame()">
+								<p id="btnTxt">Play Random Game</p>
+							</td>
+							<td id="btn" width="50%" style="border-left: 2px solid white;" onclick="startNews()">
+								<p id="btnTxt">News & Grammar</p>
+							</td>
+						</tr>
+					</table>
+
+				</td>
+			</tr>
+
+			<tr height="10%">
+				<td colspan="4" width="100%">
+
+					<table width="100%" height="100%;" style="border-collapse: collapse;">
+						<tr style="border-top: 2px solid white;">
+							<td id="btn_down"  width="50%" style="border-right: 2px solid white;" onclick="showCategories()">
+								<p id="btnTxt">Choose Category</p>
+							</td>
+							<td id="btn_down"  width="50%" style="border-left: 2px solid white;" onclick="startType()">
+								<p id="btnTxt">Type & Practice</p>
+							</td>
+						</tr>
+					</table>
+
+				</td>
+			</tr>
+
+		</table>
+	</body>
+</html>
