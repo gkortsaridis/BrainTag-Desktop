@@ -94,6 +94,14 @@ table#mypage{
 
 div#categories{
 	margin: 30px;
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+}
+
+h2#categName{
+    -webkit-column-span: all; /* Chrome, Safari, Opera */
+    column-span: all;
 }
 
 li#category_item:hover{

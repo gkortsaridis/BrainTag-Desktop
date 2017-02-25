@@ -21,13 +21,14 @@ var http = new XMLHttpRequest();
             for(var i=0; i<json.categories.length; i++){
                 var category_name = json.categories[i].name;
                 var cur_categories = json.categories[i].categories;
-
-                myInnerHTML += "<h2 style='font-size:2em;'>"+beautify(category_name)+"</h2>";
+                myInnerHTML += "<div>";
+                myInnerHTML += "<h2 id='categName' style='font-size:2em;'>"+beautify(category_name)+"</h2>";
                 myInnerHTML += "<ul>";
                 for(var j=0; j<cur_categories.length; j++){
                     myInnerHTML += "<li id='category_item' onclick=\"clickedcategory('"+cur_categories[j]+"')\">"+beautify(cur_categories[j])+"</li>";
                 }
                 myInnerHTML += "</ul>";
+                myInnerHTML += "</div>";
 
                 document.getElementById("categories").innerHTML = myInnerHTML;
             }

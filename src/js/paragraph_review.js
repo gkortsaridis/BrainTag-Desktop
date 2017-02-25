@@ -61,7 +61,6 @@ function getCategory(){
 
 		document.getElementById("paragraph").innerHTML = "<div id='loader' class='loader' style='display: block; margin: auto;'></div>";
 		document.getElementById("btn").style.backgroundColor = "#757575";
-		//Send the proper header information along with the request
 		http.setRequestHeader("Content-type", "application/json");
 
 		http.onreadystatechange = function() {//Call a function when the state changes.
