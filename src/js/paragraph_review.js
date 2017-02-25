@@ -53,8 +53,8 @@ function getCategory(){
 	}else if(result == "_news_"){
 		var http = new XMLHttpRequest();
 		var apikey = "50d716cb112e4a5db187990b0c011b96";
-		var sources = ["techcrunch"];
-		var source = sources[0];
+		var sources = ["techcrunch","bbc-news","google-news","cnn","national-geographic","the-verge","usa-today"];
+		var source = sources[Math.floor(Math.random()*sources.length)];
 		var url = "https://newsapi.org/v1/articles?source="+source+"&apiKey="+apikey;
 		http.open("GET", url, true);
 		tagOnly = true;
