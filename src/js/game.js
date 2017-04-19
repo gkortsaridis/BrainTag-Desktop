@@ -98,12 +98,9 @@ function nextSentence(){
 		}else{
 			document.getElementById("w_"+i).style.color = '#f44336';
 			document.getElementById("a_"+i).style.color = '#f44336';
-			if(answ != "--"){
-				wrongAnswers.push(corr);
-			}
+			wrongAnswers.push(corr);
 		}
 
-		//console.log("Word : "+word+" guess : "+answ+" correct : "+corr);
 	}
 
 	setTimeout(
