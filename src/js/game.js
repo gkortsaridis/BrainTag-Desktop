@@ -56,7 +56,6 @@ function processSentece(cnt){
 		answersArr.push(pos);
 	}
 
-
 	words = document.getElementById("words");
 	answers = document.getElementById("answers");
 
